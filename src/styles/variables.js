@@ -12,7 +12,13 @@ export const font = {
     sansSerif: `'Be Vietnam', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif`,
   },
   size: {
-    base: `2vw`,
+    base: `1.5vw`,
+    smaller: `0.5rem`,
+    small: `0.75rem`,
+    regular: `1rem`,
+    large: `1.25rem`,
+    larger: `1.5rem`,
+    largest: `1.75rem`,
   },
   weight: {
     regular: 400,
@@ -21,11 +27,20 @@ export const font = {
   },
 }
 
+export const breakpoints = {
+  mobile: `max-width: 599px`,
+  tabletPortrait: `min-width: 600px`,
+  tabletLandscape: `min-width: 900px`,
+  desktop: `min-width: 1200px`,
+  desktopLarge: `min-width: 1800px`,
+}
+
 export const functions = {}
 
 const variables = {
   color,
   font,
+  breakpoints,
   functions,
 }
 

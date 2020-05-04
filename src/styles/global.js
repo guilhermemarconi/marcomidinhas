@@ -42,13 +42,14 @@ const GlobalStyles = createGlobalStyle`
   }
   /* custom */
   html {
-    font-size: ${font.size.base};
+    font-size: ${font.size.large};
   }
   body {
     font-family: ${font.family.serif};
   }
   h1 {
     font-family: ${font.family.sansSerif};
+    font-size: ${font.size.larger};
     font-weight: ${font.weight.extraBold};
   }
   img {
