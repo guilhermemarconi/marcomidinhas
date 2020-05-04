@@ -1,8 +1,10 @@
+const styleVariables = require("./src/styles/variables")
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Marcomidinhas`,
+    description: `O "livro" público de receitas da família Marconi.`,
+    author: `@___marconi`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,19 +18,26 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Be+Vietnam:700,800`, `Rufina:400,700`],
+        display: `swap`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `marcomidinhas`,
+        short_name: `Comidinhas`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: styleVariables.color.primary,
+        theme_color: styleVariables.color.primary,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
