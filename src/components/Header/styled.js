@@ -1,7 +1,7 @@
-import { Link } from "gatsby"
+import { Link } from "gatsby";
 
-import styled from "styled-components"
-import { color } from "../../styles/variables"
+import styled from "styled-components";
+import { color } from "../../styles/variables";
 
 export const Container = styled.div`
   display: flex;
@@ -9,9 +9,9 @@ export const Container = styled.div`
   color: white;
   background: ${color.primaryLight};
   justify-content: space-between;
-`
+`;
 
 export const LogoLink = styled(Link)`
   color: white;
   text-decoration: none;
-`
+`;

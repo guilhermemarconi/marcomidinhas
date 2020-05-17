@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-import * as S from "./styled"
+import * as S from "./styled";
 
 const Header = () => (
   <header>
@@ -10,6 +10,6 @@ const Header = () => (
       </h1>
     </S.Container>
   </header>
-)
+);
 
-export default Header
+export default Header;

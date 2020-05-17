@@ -1,6 +1,6 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
-import { color, font } from "./variables"
+import { color, font } from "./variables";
 
 const GlobalStyles = createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/
@@ -42,7 +42,7 @@ const GlobalStyles = createGlobalStyle`
   }
   /* custom */
   html {
-    font-size: ${font.size.large};
+    font-size: ${font.size.base};
   }
   body {
     font-family: ${font.family.serif};
@@ -58,6 +58,6 @@ const GlobalStyles = createGlobalStyle`
   a {
     color: ${color.secondary}
   }
-`
+`;
 
-export default GlobalStyles
+export default GlobalStyles;

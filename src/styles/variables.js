@@ -1,10 +1,13 @@
+import hexToRgb from "./functions/hexToRgb";
+import fluidType from "./functions/fluidType";
+
 export const color = {
   primary: "#667302",
   primaryLight: "#83a603",
   primaryDark: "#010d00",
   secondary: "#f24405",
   terciary: "#a69677",
-}
+};
 
 export const font = {
   family: {
@@ -19,13 +22,34 @@ export const font = {
     large: `1.25rem`,
     larger: `1.5rem`,
     largest: `1.75rem`,
+    proportional: {
+      smaller: `0.5em`,
+      small: `0.75em`,
+      large: `1.25em`,
+      larger: `1.5em`,
+    },
   },
   weight: {
     regular: 400,
     bold: 700,
     extraBold: 800,
   },
-}
+};
+
+export const spacing = {
+  smallest: `0.25rem`,
+  smaller: `0.5rem`,
+  small: `1rem`,
+  medium: `1.5rem`,
+  large: `2rem`,
+  larger: `2.5rem`,
+  largest: `3rem`,
+  proportional: {
+    small: `1em`,
+    medium: `1.5em`,
+    large: `2em`,
+  },
+};
 
 export const breakpoints = {
   mobile: `max-width: 599px`,
@@ -33,15 +57,20 @@ export const breakpoints = {
   tabletLandscape: `min-width: 900px`,
   desktop: `min-width: 1200px`,
   desktopLarge: `min-width: 1800px`,
-}
+};
 
-export const functions = {}
+export const functions = {
+  fluidType,
+  hexToRgb,
+  rgba: (hex, alpha = 1) => `rgba(${hexToRgb(hex)}, ${alpha})`,
+};
 
 const variables = {
   color,
   font,
+  spacing,
   breakpoints,
   functions,
-}
+};
 
-export default variables
+export default variables;

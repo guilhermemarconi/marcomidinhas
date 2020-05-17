@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "marcomidinhas",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Marcomidinhas: o livro de receitas digital da família Marconi",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Guilherme Marconi <guiilhermemarconi@gmail.com>",
   "dependencies": {
     "gatsby": "^2.21.0",
     "gatsby-image": "^2.4.0",
@@ -38,9 +38,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/guilhermemarconi/marcomidinhas"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/guilhermemarconi/marcomidinhas/issues"
   }
 }

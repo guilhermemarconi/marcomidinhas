@@ -1,9 +1,7 @@
-const styleVariables = require("./src/styles/variables")
-
 module.exports = {
   siteMetadata: {
     title: `Marcomidinhas`,
-    description: `O "livro" público de receitas da família Marconi.`,
+    description: `O livro de receitas digital da família Marconi.`,
     author: `@___marconi`,
   },
   plugins: [
@@ -30,8 +28,8 @@ module.exports = {
         name: `marcomidinhas`,
         short_name: `Comidinhas`,
         start_url: `/`,
-        background_color: styleVariables.color.primary,
-        theme_color: styleVariables.color.primary,
+        background_color: `#667302`,
+        theme_color: `#667302`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
@@ -40,4 +38,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
   ],
-}
+};
