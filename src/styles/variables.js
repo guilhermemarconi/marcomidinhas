@@ -7,11 +7,14 @@ export const color = {
   primaryDark: "#010d00",
   secondary: "#f24405",
   terciary: "#a69677",
+  gray: "#777",
+  grayLight: "#ddd",
+  grayDark: "#333",
 };
 
 export const font = {
   family: {
-    serif: `Rufino, 'Times New Roman', Times, serif`,
+    serif: `Rufino, Times, 'Times New Roman', serif`,
     sansSerif: `'Be Vietnam', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif`,
   },
   size: {
@@ -51,6 +54,13 @@ export const spacing = {
   },
 };
 
+export const zIndex = {
+  minimum: 1,
+  medium: 2,
+  maximum: 3,
+  omg: 4,
+};
+
 export const breakpoints = {
   mobile: `max-width: 599px`,
   tabletPortrait: `min-width: 600px`,
@@ -64,13 +74,3 @@ export const functions = {
   hexToRgb,
   rgba: (hex, alpha = 1) => `rgba(${hexToRgb(hex)}, ${alpha})`,
 };
-
-const variables = {
-  color,
-  font,
-  spacing,
-  breakpoints,
-  functions,
-};
-
-export default variables;

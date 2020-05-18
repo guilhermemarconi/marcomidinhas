@@ -3,13 +3,9 @@ import React from "react";
 import * as S from "./styled";
 
 const Header = () => (
-  <header>
-    <S.Container>
-      <h1>
-        <S.LogoLink>Marcomidinhas</S.LogoLink>
-      </h1>
-    </S.Container>
-  </header>
+  <S.Header>
+    <S.LogoLink to="/">Marcomidinhas</S.LogoLink>
+  </S.Header>
 );
 
 export default Header;

@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-import { color, font } from "./variables";
+import { color, font, spacing } from "./variables";
 
 const GlobalStyles = createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/
@@ -42,10 +42,22 @@ const GlobalStyles = createGlobalStyle`
   }
   /* custom */
   html {
-    font-size: ${font.size.base};
+    box-sizing: border-box;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  #gatsby-focus-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: stretch;
   }
   body {
     font-family: ${font.family.serif};
+  }
+  main {
+    flex: 1;
   }
   h1 {
     font-family: ${font.family.sansSerif};
