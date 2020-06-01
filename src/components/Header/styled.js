@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 
 import styled from "styled-components";
-import { color, spacing, font, breakpoints } from "../../styles/variables";
+import { color, spacing, font, breakpoint } from "../../styles/variables";
 
 export const Header = styled.div`
   display: none;
@@ -11,7 +11,7 @@ export const Header = styled.div`
   align-content: center;
   justify-content: center;
 
-  @media screen and (${breakpoints.tabletLandscape}) {
+  @media screen and (${breakpoint.tabletLandscape}) {
     display: flex;
   }
 `;

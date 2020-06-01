@@ -11,13 +11,13 @@ const ICON_SIZE = 20;
 const BottomNavigation = () => (
   <S.Bar>
     <S.IconButton>
-      <img src={HashtagIcon} width={ICON_SIZE} />
+      <img src={HashtagIcon} width={ICON_SIZE} alt="Tags" />
     </S.IconButton>
     <S.HomeButton to="/" title="Marcomidinhas">
-      <img src={HomeIcon} width={ICON_SIZE} />
+      <img src={HomeIcon} width={ICON_SIZE} alt="Página inicial" />
     </S.HomeButton>
     <S.IconButton>
-      <img src={SearchIcon} width={ICON_SIZE} />
+      <img src={SearchIcon} width={ICON_SIZE} alt="Buscar" />
     </S.IconButton>
   </S.Bar>
 );

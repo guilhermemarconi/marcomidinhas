@@ -6,14 +6,14 @@
  * @example `font-size: ${ fluidType({ 600: 18, 1200: 30 }) }`;
  */
 function fluidType(sizes) {
-  const breakpoints = Object.keys(sizes);
+  const breakpoint = Object.keys(sizes);
 
-  if (breakpoints.length !== 2) {
+  if (breakpoint.length !== 2) {
     throw Error(`fluidType() sizes must be exactly 2 values`);
   }
 
-  const smallBreakpoint = breakpoints[0];
-  const largeBreakpoint = breakpoints[1];
+  const smallBreakpoint = breakpoint[0];
+  const largeBreakpoint = breakpoint[1];
   const smallBreakpointValue = sizes[smallBreakpoint];
   const largeBreakpointValue = sizes[largeBreakpoint];
   const slope =

@@ -3,9 +3,10 @@ import { Link } from "gatsby";
 
 import {
   zIndex,
-  breakpoints,
+  breakpoint,
   spacing,
   color,
+  shadow,
   functions,
 } from "../../styles/variables";
 
@@ -19,10 +20,10 @@ export const Bar = styled.div`
   background: ${color.grayLight};
   justify-content: space-around;
   filter: drop-shadow(
-    0 -${spacing.smallest} 5px ${functions.rgba("#000", 0.3)}
+    0 -${spacing.smallest} ${shadow.small} ${functions.rgba("#000", 0.3)}
   );
 
-  @media screen and (${breakpoints.tabletLandscape}) {
+  @media screen and (${breakpoint.tabletLandscape}) {
     display: none;
   }
 `;

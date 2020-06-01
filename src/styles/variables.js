@@ -2,14 +2,14 @@ import hexToRgb from "./functions/hexToRgb";
 import fluidType from "./functions/fluidType";
 
 export const color = {
-  primary: "#667302",
-  primaryLight: "#83a603",
-  primaryDark: "#010d00",
-  secondary: "#f24405",
-  terciary: "#a69677",
-  gray: "#777",
-  grayLight: "#ddd",
-  grayDark: "#333",
+  primary: `#667302`,
+  primaryLight: `#83a603`,
+  primaryDark: `#010d00`,
+  secondary: `#f24405`,
+  terciary: `#a69677`,
+  gray: `#777`,
+  grayLight: `#ddd`,
+  grayDark: `#333`,
 };
 
 export const font = {
@@ -54,6 +54,34 @@ export const spacing = {
   },
 };
 
+export const border = {
+  radius: {
+    smaller: `0.25rem`,
+    small: `0.5rem`,
+    medium: `1rem`,
+    large: `1.5rem`,
+    rounded: `1000rem`,
+  },
+};
+
+export const shadow = {
+  small: `0.25rem`,
+  medium: `1rem`,
+  large: `1.5rem`,
+  larger: `2rem`,
+  largest: `2.5rem`,
+  omg: `3rem`,
+};
+
+export const transition = {
+  easing: `ease`,
+  duration: {
+    small: `0.15s`,
+    medium: `0.3s`,
+    large: `0.5s`,
+  },
+};
+
 export const zIndex = {
   minimum: 1,
   medium: 2,
@@ -61,7 +89,7 @@ export const zIndex = {
   omg: 4,
 };
 
-export const breakpoints = {
+export const breakpoint = {
   mobile: `max-width: 599px`,
   tabletPortrait: `min-width: 600px`,
   tabletLandscape: `min-width: 900px`,
